@@ -142,7 +142,7 @@ public class mutualFriend {
 	        Integer i = 0;
 	        String output = "";
 	        //original
-	        for (java.util.Map.Entry<Long, List<Long>> entry : sortedMutualFriends.entrySet()) {
+/*	        for (java.util.Map.Entry<Long, List<Long>> entry : sortedMutualFriends.entrySet()) {
 	            if (i == 0) {
 	                output = entry.getKey().toString() + " (" + entry.getValue().size() + ": " + entry.getValue() + ")";
 	            } else {
@@ -154,9 +154,9 @@ public class mutualFriend {
 	       
 	        	context.write(key, new Text(output));
 	      
+*/	        	
 	        	
-	        	
-/*	        
+	        
 	        
 	        //******************update for question1
 	        for (java.util.Map.Entry<Long, List<Long>> entry : sortedMutualFriends.entrySet()) {
@@ -167,9 +167,9 @@ public class mutualFriend {
 	            }
 	            ++i;
 	         
-	            if(i == 10){
-	            	break;
-	            }
+//	            if(i == 10){
+//	            	break;
+//	            }
 
 	        }
 	         if(key.toString().equals("924") ||key.toString().equals("8941")||key.toString().equals("8942")||key.toString().equals("9019")
@@ -178,7 +178,7 @@ public class mutualFriend {
 		        	context.write(key, new Text(output));
 		        }
 	         
-*/	         
+	         
 	    }//end of reduce function
 	}//end of reduce class
 	
